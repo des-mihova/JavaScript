@@ -6,14 +6,12 @@
 
 
 function evenNumber(arr) {
-    let result = [];
-
+    let result = 0;
     for (let i = 0; i < arr.length; i++) {
         if (i % 2 !== 0) {
-            //console.log(arr[i]);
-            result.push(arr[i]); 
+            result = arr[i];
         }
     }
     return result;
 }
-console.log(evenNumber([1,5,2,3,4,6,3,1]));
+console.log(evenNumber([1,5,2,3,4,6,3,8]));
